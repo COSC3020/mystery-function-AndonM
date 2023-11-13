@@ -12,3 +12,5 @@ function mystery(a) {
     else return a[0];
 }
 ```
+
+In the base case, for an array containing only one element, we will return this element. Otherwise, we work our way down to the base case by slicing from the second element through to the last. In other words we weed out the first element with each iteration. This value is stored and we make a comparison. If the maximal element from the rest of the array is greater than the first element, said maximal element becomes the return value; otherwise we keep the first element as the maximum. Through recursion we repeat this process until the array is of length one, at which point we return the greatest element.
